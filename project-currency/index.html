@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+      integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="index.js"></script>
+    <title>Currency</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <ul id="displayCurrency"></ul>
+    </nav>
+
+    <header>
+      <button class="toggle" id="toggle">
+        <i class="fa fa-bars fa-2x"></i>
+      </button>
+      <h1>Current Currency Rate <span id="showCur">USD</span></h1>
+    </header>
+    <div class="container">
+      <div class="group group1">
+        <h3>Group 1</h3>
+        <h6>rates that are < 1</h6>
+        <ul id="sortUl-1"></ul>
+        <strong>Count-<span></span></strong>
+      </div>
+      <div class="group group2">
+        <h3>Group 2</h3>
+        <h6>rates that are >= 1 and < 1.5</h6>
+        <ul id="sortUl-2"></ul>
+        <strong>Count-<span></span></strong>
+      </div>
+      <div class="group group3">
+        <h3>Group 3</h3>
+        <h6>rates that are >= 1.5</h6>
+        <ul id="sortUl-3"></ul>
+        <strong>Count-<span></span></strong>
+      </div>
+    </div>
+  </body>
+</html>
